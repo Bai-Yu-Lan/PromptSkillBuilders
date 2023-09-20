@@ -12,7 +12,7 @@
     * [检索增强生成 (RAG)提示](part2/better_tools.md)
     * [思维树 (ToT)提示](part2/feedback_please.md)
 * [应用案例](part3/README.md)
-    * [软件工程领域](part3/feedback_please.md)
+    * [软件工程领域](part3/software-engineering.md)
     * [教育培训领域](part3/feedback_please.md)
     * [文化娱乐领域](part3/better_tools.md)
 * [潜在风险]
