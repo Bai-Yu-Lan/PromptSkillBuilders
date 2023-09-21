@@ -1,7 +1,7 @@
 # 项目说明
 
 
-## gitbook & node.js 版本说明
+## gitbook 
 
 基于`gitbook`框架进行调试
 
