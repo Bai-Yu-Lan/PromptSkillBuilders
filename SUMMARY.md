@@ -11,10 +11,11 @@
     * [检索增强生成 (RAG)提示](part2/RAG.md)
     * [思维树 (ToT)提示](part2/TOT.md)
 * [应用案例](part3/README.md)
-    * [软件工程领域示例](part3/software-engineering.md)
+    * [软件工程领域](part3/README.md)
         * [测试工程师](part3/software-engineering/test-engineer.md)
         * [产品经理](part3/software-engineering/product-manager.md)
         * [研发工程](part3/software-engineering/development-engineer.md)
+        * [互联网运营](part3/software-engineering/operation.md)
     * [教育培训领域](part3/feedback_please.md)
     * [文化娱乐领域](part3/better_tools.md)
 * [潜在风险]
