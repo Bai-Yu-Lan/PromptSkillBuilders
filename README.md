@@ -34,8 +34,6 @@ source ~/.nvm/nvm.sh
 
 # 下载 node10 版本
 
-npm install gitbook -g
-
 nvm install 10
 
 nvm use 10
