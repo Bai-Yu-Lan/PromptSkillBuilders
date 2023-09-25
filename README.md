@@ -1,5 +1,13 @@
 # 项目说明
 
+## 项目格式
+
+* Part1：提示词工程的基础概念 MD 文档
+* Part2: 提示词技术说明 MD 文档
+* Part3: 按照领域划分的提示词Case MD 文档介绍
+ * 领域/岗位/工作分类/具体操作
+* SUMMARY：整体项目的目录
+
 
 ## gitbook 
 
@@ -25,8 +33,6 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
 source ~/.nvm/nvm.sh
 
 # 下载 node10 版本
-
-npm install gitbook -g
 
 nvm install 10
 
