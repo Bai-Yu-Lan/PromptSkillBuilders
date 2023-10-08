@@ -23,8 +23,7 @@ jobs:
 
       - name: Build GitBook
         run: |
-          gitbook build  # 构建 GitBook 项目
-          # 如果需要生成静态 HTML 网站，可以使用 "gitbook build" 命令
+          gitbook build ./
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3  # 使用部署到 GitHub Pages 的 Action
