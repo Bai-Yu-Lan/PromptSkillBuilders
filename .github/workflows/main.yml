@@ -22,7 +22,7 @@ jobs:
           gitbook install  # 安装 GitBook 插件和依赖
 
       - name: Build GitBook
-        run: ｜
+        run: |
           gitbook serve
 
       - name: Deploy to GitHub Pages
