@@ -23,8 +23,7 @@ jobs:
 
       - name: Debug Info
         run: |
-          pwd  # 输出当前目录
-          ls   # 列出当前目录下的文件
+          ls -al && pwd   # 列出当前目录下的文件
 
       - name: Build GitBook
         run: |
