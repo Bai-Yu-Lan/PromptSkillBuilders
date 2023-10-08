@@ -27,12 +27,13 @@ jobs:
 
       - name: Build GitBook
         run: |
+          cd /home/runner/work/PromptSkillBuilders/
           gitbook build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3  # 使用部署到 GitHub Pages 的 Action
         with:
           personal_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_book  # 需要发布的目录，这里是 GitBook 构建输出目录
+          publish_dir: /home/runner/work/PromptSkillBuilders/_book  # 需要发布的目录，这里是 GitBook 构建输出目录
 
 
