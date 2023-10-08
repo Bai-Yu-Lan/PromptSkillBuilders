@@ -21,9 +21,14 @@ jobs:
           npm install -g gitbook-cli  # 安装 GitBook CLI
           gitbook install  # 安装 GitBook 插件和依赖
 
+      - name: Debug Info
+        run: |
+          pwd  # 输出当前目录
+          ls   # 列出当前目录下的文件
+
       - name: Build GitBook
         run: |
-          gitbook serve
+          gitbook build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3  # 使用部署到 GitHub Pages 的 Action
