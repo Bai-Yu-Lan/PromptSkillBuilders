@@ -96,4 +96,4 @@ gitbook -h
 
 ## 关于我们
 
-1. 元沸点：AIGC综合服务平台，提供GPU虚拟机自助服务、MaaS、AIGC文生图等场景化服务。[点击访问](https://www.yfd.net/stableDiffusion/ModelCenter)
+1. 元沸点：AIGC综合服务平台，提供GPU虚拟机自助服务、MaaS、AIGC文生图等场景化服务。[点击访问](https://www.yfd.net/)
