@@ -1,0 +1,562 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>链式思考（CoT）提示 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="RAG.html" />
+    
+    
+    <link rel="prev" href="few-shot.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../part1/">
+            
+                <a href="../part1/">
+            
+                    
+                    提示工程简介
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../part1/conception.html">
+            
+                <a href="../part1/conception.html">
+            
+                    
+                    基本概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../part1/element.html">
+            
+                <a href="../part1/element.html">
+            
+                    
+                    提示词要素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../part1/General-tips.html">
+            
+                <a href="../part1/General-tips.html">
+            
+                    
+                    提示词通用技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    提示词技术介绍
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="zero-shot.html">
+            
+                <a href="zero-shot.html">
+            
+                    
+                    零样本提示技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="few-shot.html">
+            
+                <a href="few-shot.html">
+            
+                    
+                    少样本提示技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.3" data-path="COT.html">
+            
+                <a href="COT.html">
+            
+                    
+                    链式思考（CoT）提示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="RAG.html">
+            
+                <a href="RAG.html">
+            
+                    
+                    检索增强生成 (RAG)提示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="TOT.html">
+            
+                <a href="TOT.html">
+            
+                    
+                    思维树 (ToT)提示
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../part3/">
+            
+                <a href="../part3/">
+            
+                    
+                    应用案例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../part3/">
+            
+                <a href="../part3/">
+            
+                    
+                    软件工程领域
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../part3/software-engineering/test-engineer.html">
+            
+                <a href="../part3/software-engineering/test-engineer.html">
+            
+                    
+                    测试工程师
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../part3/software-engineering/product-manager.html">
+            
+                <a href="../part3/software-engineering/product-manager.html">
+            
+                    
+                    产品经理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="../part3/software-engineering/development-engineer.html">
+            
+                <a href="../part3/software-engineering/development-engineer.html">
+            
+                    
+                    研发工程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="../part3/software-engineering/operation.html">
+            
+                <a href="../part3/software-engineering/operation.html">
+            
+                    
+                    互联网运营
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../part3/feedback_please.md">
+            
+                <span>
+            
+                    
+                    教育培训领域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../part3/better_tools.md">
+            
+                <span>
+            
+                    
+                    文化娱乐领域
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    [潜在风险]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" >
+            
+                <span>
+            
+                    
+                    [对抗性提示]
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" >
+            
+                <span>
+            
+                    
+                    [回答偏见]
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >链式思考（CoT）提示</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x94FE;&#x5F0F;&#x601D;&#x8003;&#xFF08;cot&#xFF09;&#x63D0;&#x793A;">&#x94FE;&#x5F0F;&#x601D;&#x8003;&#xFF08;CoT&#xFF09;&#x63D0;&#x793A;</h1>
+<p>&#x601D;&#x7EF4;&#x94FE;&#x63D0;&#x793A;&#xFF08;Chain-of-Thought&#xFF0C;CoT&#xFF09;&#x662F;&#x4E00;&#x79CD;&#x7528;&#x4E8E;&#x63D0;&#x9AD8;&#x5927;&#x8BED;&#x8A00;&#x6A21;&#x578B;&#x63A8;&#x7406;&#x80FD;&#x529B;&#x7684;&#x6280;&#x672F;&#xFF0C;&#x901A;&#x8FC7;&#x63D0;&#x793A;&#x6A21;&#x578B;&#x751F;&#x6210;&#x4E00;&#x7CFB;&#x5217;&#x63A8;&#x7406;&#x6B65;&#x9AA4;&#x6765;&#x89E3;&#x51B3;&#x591A;&#x6B65;&#x9AA4;&#x7684;&#x95EE;&#x9898;&#x3002;&#x7814;&#x7A76;&#x8868;&#x660E;&#xFF0C;&#x8FD9;&#x79CD;&#x6280;&#x672F;&#x53EF;&#x4EE5;&#x663E;&#x8457;&#x63D0;&#x9AD8;&#x6A21;&#x578B;&#x5728;&#x6570;&#x5B66;&#x3001;&#x5E38;&#x8BC6;&#x3001;&#x63A8;&#x7406;&#x7B49;&#x65B9;&#x9762;&#x7684;&#x51C6;&#x786E;&#x6027;&#x3002;&#x8BE5;&#x6280;&#x672F;&#x7684;&#x5E94;&#x7528;&#x4F7F;&#x5F97;&#x6A21;&#x578B;&#x80FD;&#x591F;&#x5C06;&#x591A;&#x6B65;&#x9AA4;&#x7684;&#x95EE;&#x9898;&#x5206;&#x89E3;&#x6210;&#x4E2D;&#x95F4;&#x6B65;&#x9AA4;&#xFF0C;&#x4ECE;&#x800C;&#x66F4;&#x597D;&#x5730;&#x7406;&#x89E3;&#x548C;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#x3002;
+&#x8FD9;&#x662F;&#x4E00;&#x79CD;&#x5F15;&#x5165;&#x4E2D;&#x95F4;&#x63A8;&#x7406;&#x6B65;&#x9AA4;&#x4EE5;&#x5B9E;&#x73B0;&#x590D;&#x6742;&#x63A8;&#x7406;&#x80FD;&#x529B;&#x7684;&#x63D0;&#x793A;&#x6280;&#x672F;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x5176;&#x4E0E;&#x5C11;&#x6837;&#x672C;&#x63D0;&#x793A;&#x76F8;&#x7ED3;&#x5408;&#xFF0C;&#x4EE5;&#x5728;&#x9700;&#x8981;&#x63A8;&#x7406;&#x7684;&#x66F4;&#x590D;&#x6742;&#x4EFB;&#x52A1;&#x4E0A;&#x83B7;&#x5F97;&#x66F4;&#x597D;&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
+<p><strong>&#x793A;&#x4F8B;</strong></p>
+<ul>
+<li>&#x8F93;&#x5165;</li>
+</ul>
+<pre><code>&#x8FD9;&#x7EC4;&#x6570;&#x4E2D;&#x5947;&#x6570;&#x52A0;&#x8D77;&#x6765;&#x7684;&#x548C;&#x662F;&#x5076;&#x6570;&#xFF1A;4&#x3001;8&#x3001;9&#x3001;15&#x3001;12&#x3001;2&#x3001;1&#x3002;
+A&#xFF1A;&#x5C06;&#x6240;&#x6709;&#x5947;&#x6570;&#x76F8;&#x52A0;&#xFF08;9&#x3001;15&#x3001;1&#xFF09;&#xFF0C;&#x5F97;&#x5230;25&#x3002;&#x7B54;&#x6848;&#x4E3A;&#x4E0D;&#x662F;&#x3002;
+&#x8FD9;&#x7EC4;&#x6570;&#x4E2D;&#x5947;&#x6570;&#x52A0;&#x8D77;&#x6765;&#x7684;&#x548C;&#x662F;&#x5076;&#x6570;&#xFF1A;17&#x3001;10&#x3001;19&#x3001;4&#x3001;8&#x3001;12&#x3001;24&#x3002;
+A&#xFF1A;&#x5C06;&#x6240;&#x6709;&#x5947;&#x6570;&#x76F8;&#x52A0;&#xFF08;17&#x3001;19&#xFF09;&#xFF0C;&#x5F97;&#x5230;36&#x3002;&#x7B54;&#x6848;&#x4E3A;&#x662F;&#x3002;
+&#x8FD9;&#x7EC4;&#x6570;&#x4E2D;&#x5947;&#x6570;&#x52A0;&#x8D77;&#x6765;&#x7684;&#x548C;&#x662F;&#x5076;&#x6570;&#xFF1A;16&#x3001;11&#x3001;14&#x3001;4&#x3001;8&#x3001;13&#x3001;24&#x3002;
+A&#xFF1A;&#x5C06;&#x6240;&#x6709;&#x5947;&#x6570;&#x76F8;&#x52A0;&#xFF08;11&#x3001;13&#xFF09;&#xFF0C;&#x5F97;&#x5230;24&#x3002;&#x7B54;&#x6848;&#x4E3A;&#x662F;&#x3002;
+&#x8FD9;&#x7EC4;&#x6570;&#x4E2D;&#x5947;&#x6570;&#x52A0;&#x8D77;&#x6765;&#x7684;&#x548C;&#x662F;&#x5076;&#x6570;&#xFF1A;17&#x3001;9&#x3001;10&#x3001;12&#x3001;13&#x3001;4&#x3001;2&#x3002;
+A&#xFF1A;&#x5C06;&#x6240;&#x6709;&#x5947;&#x6570;&#x76F8;&#x52A0;&#xFF08;17&#x3001;9&#x3001;13&#xFF09;&#xFF0C;&#x5F97;&#x5230;39&#x3002;&#x7B54;&#x6848;&#x4E3A;&#x4E0D;&#x662F;&#x3002;
+&#x8FD9;&#x7EC4;&#x6570;&#x4E2D;&#x5947;&#x6570;&#x52A0;&#x8D77;&#x6765;&#x7684;&#x548C;&#x662F;&#x5076;&#x6570;&#xFF1A;15&#x3001;32&#x3001;5&#x3001;13&#x3001;82&#x3001;7&#x3001;1&#x3002;
+A&#xFF1A;
+</code></pre><ul>
+<li>&#x8F93;&#x51FA;</li>
+</ul>
+<pre><code>&#x8FD9;&#x7EC4;&#x6570;&#x4E2D;&#x5947;&#x6570;&#x52A0;&#x8D77;&#x6765;&#x7684;&#x548C;&#x662F;&#x5076;&#x6570;&#xFF1A;4&#x3001;8&#x3001;9&#x3001;15&#x3001;12&#x3001;2&#x3001;1&#x3002;
+A&#xFF1A;&#x5C06;&#x6240;&#x6709;&#x5947;&#x6570;&#x76F8;&#x52A0;&#xFF08;9&#x3001;15&#x3001;1&#xFF09;&#xFF0C;&#x5F97;&#x5230;25&#x3002;&#x7B54;&#x6848;&#x4E3A;&#x4E0D;&#x662F;&#x3002;
+&#x8FD9;&#x7EC4;&#x6570;&#x4E2D;&#x5947;&#x6570;&#x52A0;&#x8D77;&#x6765;&#x7684;&#x548C;&#x662F;&#x5076;&#x6570;&#xFF1A;17&#x3001;10&#x3001;19&#x3001;4&#x3001;8&#x3001;12&#x3001;24&#x3002;
+A&#xFF1A;&#x5C06;&#x6240;&#x6709;&#x5947;&#x6570;&#x76F8;&#x52A0;&#xFF08;17&#x3001;19&#xFF09;&#xFF0C;&#x5F97;&#x5230;36&#x3002;&#x7B54;&#x6848;&#x4E3A;&#x662F;&#x3002;
+&#x8FD9;&#x7EC4;&#x6570;&#x4E2D;&#x5947;&#x6570;&#x52A0;&#x8D77;&#x6765;&#x7684;&#x548C;&#x662F;&#x5076;&#x6570;&#xFF1A;16&#x3001;11&#x3001;14&#x3001;4&#x3001;8&#x3001;13&#x3001;24&#x3002;
+A&#xFF1A;&#x5C06;&#x6240;&#x6709;&#x5947;&#x6570;&#x76F8;&#x52A0;&#xFF08;11&#x3001;13&#xFF09;&#xFF0C;&#x5F97;&#x5230;24&#x3002;&#x7B54;&#x6848;&#x4E3A;&#x662F;&#x3002;
+&#x8FD9;&#x7EC4;&#x6570;&#x4E2D;&#x5947;&#x6570;&#x52A0;&#x8D77;&#x6765;&#x7684;&#x548C;&#x662F;&#x5076;&#x6570;&#xFF1A;17&#x3001;9&#x3001;10&#x3001;12&#x3001;13&#x3001;4&#x3001;2&#x3002;
+A&#xFF1A;&#x5C06;&#x6240;&#x6709;&#x5947;&#x6570;&#x76F8;&#x52A0;&#xFF08;17&#x3001;9&#x3001;13&#xFF09;&#xFF0C;&#x5F97;&#x5230;39&#x3002;&#x7B54;&#x6848;&#x4E3A;&#x4E0D;&#x662F;&#x3002;
+&#x8FD9;&#x7EC4;&#x6570;&#x4E2D;&#x5947;&#x6570;&#x52A0;&#x8D77;&#x6765;&#x7684;&#x548C;&#x662F;&#x5076;&#x6570;&#xFF1A;15&#x3001;32&#x3001;5&#x3001;13&#x3001;82&#x3001;7&#x3001;1&#x3002;
+A&#xFF1A;&#x5C06;&#x6240;&#x6709;&#x5947;&#x6570;&#x76F8;&#x52A0;&#xFF08;15&#x3001;5&#x3001;7&#x3001;9&#x3001;13&#x3001;1&#xFF09;&#xFF0C;&#x5F97;&#x5230;41&#x3002;&#x7B54;&#x6848;&#x4E3A;&#x4E0D;&#x662F;&#x3002;
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="few-shot.html" class="navigation navigation-prev " aria-label="Previous page: 少样本提示技术">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="RAG.html" class="navigation navigation-next " aria-label="Next page: 检索增强生成 (RAG)提示">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"链式思考（CoT）提示","level":"1.3.3","depth":2,"next":{"title":"检索增强生成 (RAG)提示","level":"1.3.4","depth":2,"path":"part2/RAG.md","ref":"part2/RAG.md","articles":[]},"previous":{"title":"少样本提示技术","level":"1.3.2","depth":2,"path":"part2/few-shot.md","ref":"part2/few-shot.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part2/COT.md","mtime":"2023-10-11T06:39:41.299Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-10-11T06:40:24.002Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
